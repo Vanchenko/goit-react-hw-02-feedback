@@ -11,6 +11,7 @@ export const App = () => {
       }}
     >
       React homework template
+      Vanchenko E., goit-react-hw-02-feedback
     </div>
   );
 };
