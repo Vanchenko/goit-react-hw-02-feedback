@@ -1,0 +1,14 @@
+.feedback {
+    /* justify-content: center; */
+    margin-top: 20px;
+    padding: 0;
+}
+.button {
+    margin-left: 10px;
+}
+
+.button:hover {
+    color: aquamarine;
+    background-color: blue;
+}
+

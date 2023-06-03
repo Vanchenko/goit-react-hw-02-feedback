@@ -1,0 +1,9 @@
+.counterList {
+    margin: 0;
+    padding: 0;
+    row-gap: 5px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+}
