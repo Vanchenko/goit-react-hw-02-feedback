@@ -21,20 +21,20 @@ export class App extends Component {
     const { good, neutral, bad } = this.state;
     return (
 <>
-    <Section title="Please leave feedback">
-          <FeedbackOptions options={Object.keys(this.state) } onLeaveFeedback={this.btnClick} /> 
-    </Section>
-    <Section title="Statistics">
-            { this.countTotalFeedback() === 0 ?
-              <Notification message="There is no feedback given" /> :
-              <Statistics
-                good={good}
-                neutral={neutral}
-                bad={bad}
-                total={this.countTotalFeedback()}
-                percent={this.countPositiveFeedbackPercentage()} />
-            }
-    </Section> 
+  <Section title="Please leave feedback">
+    <FeedbackOptions options={Object.keys(this.state) } onLeaveFeedback={this.btnClick} /> 
+  </Section>
+  <Section title="Statistics">
+    { this.countTotalFeedback() === 0 ?
+      <Notification message="There is no feedback given" /> :
+      <Statistics
+        good={good}
+        neutral={neutral}
+        bad={bad}
+        total={this.countTotalFeedback()}
+        percent={this.countPositiveFeedbackPercentage()} />
+    }
+  </Section> 
 </>  
     );
   }
